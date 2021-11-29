@@ -2,12 +2,24 @@ import { useState } from 'react'
 import logo from './logo.svg'
 import './App.css'
 
+import { Button } from 'antd'
+
+import {
+  HomeOutlined,
+  SettingFilled,
+  SmileOutlined,
+  SyncOutlined,
+  LoadingOutlined,
+} from '@ant-design/icons';
+
 const App = () => {
   const [count, setCount] = useState(0)
 
   return (
     <div className="App">
       <header className="App-header">
+        <Button type="primary">test</Button>
+        <HomeOutlined color="#333" />
         <img src={logo} className="App-logo" alt="logo" />
         <p>Hello Vite + React!</p>
         <p>
