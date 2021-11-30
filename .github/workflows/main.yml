@@ -12,7 +12,7 @@ jobs:
         node-version: [16]
     steps:
       - uses: actions/checkout@v2
-      - uses: pnpm/action-setup@2.0.0
+      - uses: pnpm/action-setup@v2.0.1
       - name: setup node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v2
         with:
